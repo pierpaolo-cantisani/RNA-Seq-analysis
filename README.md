@@ -25,17 +25,29 @@ flowchart TD
     end
 
     subgraph B["Module B - DE (R)"]
-        B1[Import counts<br/>Tximport] --> B2[Differential Expression\nDESeq2]
+        B1[Import counts<br/>Tximport] --> B2[Exploratory analysis<br/>PCA-t-SNE-heatmap]
+        B2 --> B3[Differential Expression<br/>DESeq2]
+        B3 --> B4[Results visualization and discussion<br/>volcano plot-DE heatmap]
+      
     end
 
     subgraph C["Module C - FE (R)"]
         C1[Literature and database research]
         C2[ORA<br/>ClusterProfiler]
         C3[GSEA<br/>ClusterProfiler]
+        C4[Comparison and biological insight]
     end
 
+    subgraph D["Conclusions"]
+        D1[Comparison]
+        D2[ORA<br/>ClusterProfiler]
+        C3[GSEA<br/>ClusterProfiler]
+    end
     A --> B
     B --> C
+    C1 --> C4
+    C2 --> C4
+    C3 --> C4
 ```
 
 ## Conclusions and findings
