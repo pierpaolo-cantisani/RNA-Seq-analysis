@@ -16,7 +16,7 @@ Platform: Illumina NovaSeq X Plus.
 The RNA-Seq pipeline was performed as follows:
 ```mermaid
 flowchart TD
-    subgraph A["Module A — Preprocessing and Mapping (Bash)"]
+    subgraph A["Module A - Preprocessing and Mapping (Bash)"]
         A1[Conda environment set-up] --> A2[Raw FASTQ files]
         A2 --> A3[Quality Control\nFastQC + MultiQC]
         A3 --> A4[Trimming\nFastp]
@@ -24,11 +24,11 @@ flowchart TD
         A5 --> A6[Pseudo-mapping\nKallisto]
     end
 
-    subgraph B["Module B — Differential Expression (R)"]
+    subgraph B["Module B - Differential Expression (R)"]
         B1[Import counts\nTximport] --> B2[Differential Expression\nDESeq2]
     end
 
-    subgraph C["Module C — Functional Enrichment (Literature study and R)"]
+    subgraph C["Module C - Functional Enrichment (Literature study and R)"]
         C1[Literature and database research]
         C2[ORA\nClusterProfiler]
         C3[GSEA\nClusterProfiler]
