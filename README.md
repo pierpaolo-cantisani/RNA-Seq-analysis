@@ -55,6 +55,12 @@ flowchart TD
 ## Conclusions and findings
 L-phenylalanine was found to have a moderate influence on key biological processes of Th2 cells, such as differentiation, cell cycle regulation and renal metabolism. To a lesser extent, also cell motility, tissue morphogenesis, and hormone biosynthesis and signalling appear to be affected.
 
+## Jupyter Notebook
+The project is formatted in a single Jupyter notebook for organization and clarity. As previously stated, the notebook contains two sections using different languages: bash (for bioinformatics tools) and R (for statistical analysis).  
+To reproduce the analysis:
+- Bash cells: run with the Python kernel using the %%bash magic command at the top of each cell. The conda environment "bioinf" must be activated beforehand..
+- R cells: run by switching to the IRkernel. All required R packages are listed in the R Package Versions section below.
+
 ## Tools & Versions
 | Tool | Version | Environment |
 |------|---------|-------------|
