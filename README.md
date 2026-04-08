@@ -1,6 +1,6 @@
 # RNA-Seq analysis case study
 ## Overview
-Case study of a full RNA-Seq pipeline, from raw reads to biological interpretation.  
+The repository contains a case study of a full RNA-Seq pipeline, from raw reads to biological interpretation.  
 
 This project is meant as a case study to showcase both my organizational skills and my approach to interpreting results and obtaining biological insights. The project is structured as a “presentation” of the workflow, with the main analyses and comments provided in the Jupyter notebook "RNA_seq_case_study.ipynb".
 
