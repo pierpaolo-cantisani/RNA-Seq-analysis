@@ -1,4 +1,4 @@
-# RNASeq-with-Insights
+# RNA-Seq analysis case study
 ## Overview
 Case study of a full RNA-Seq pipeline, from raw reads to biological interpretation.  
 
